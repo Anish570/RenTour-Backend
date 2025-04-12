@@ -8,23 +8,18 @@ config();
 
 const app = express();
 
-// Dynamic CORS configuration
 const allowedOrigins = [
-  "https://new-rentour.vercel.app/",
-  "http://localhost:5173", // Vite dev server
-  "http://localhost:3000", // Create React App default
-  "http://127.0.0.1:5173", // Sometimes used for local dev
+  "https://new-rentour.vercel.app",
+  "http://localhost:5173",
+  "http://localhost:3000",
+  "http://127.0.0.1:5173",
+  "http://127.0.0.1:5174",
 ];
 
 const corsOptions = {
   origin: function (origin, callback) {
     // Allow requests with no origin (like Postman or curl)
-    if (!origin) return callback(null, true);
-    if (
-      origin.startsWith("http://localhost") ||
-      origin.startsWith("http://127.0.0.1") ||
-      allowedOrigins.includes(origin)
-    ) {
+    if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));
@@ -39,6 +34,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Hello there from RenTour Backend");
 });
+
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/products", productRoutes);
