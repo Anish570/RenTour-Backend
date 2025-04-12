@@ -4,7 +4,6 @@ import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import { config } from "dotenv";
-
 config();
 
 const app = express();

@@ -4,9 +4,11 @@ import { z } from "zod";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import process from "process";
+import { config } from "dotenv";
+config();
 
 const usersFile = path.join(process.cwd(), "src", "Data", "users.json");
-const JWT_SECRET = "Secrectkey";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 if (!JWT_SECRET) {
   throw new Error("JWT_SECRET is not defined in .env");
