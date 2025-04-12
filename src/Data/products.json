@@ -1,0 +1,664 @@
+[
+  {
+    "id": 1,
+    "name": "Aerial Phantom Drone",
+    "category": "Drones",
+    "publisher": "skyflyr99",
+    "description": "High-performance drone with 4K camera and long flight time.",
+    "stock": 50,
+    "sold": 22,
+    "productAvatar": "/images/Drones/drone1.png",
+    "images": [
+      "/images/Drones/drone1.png",
+      "/images/Drones/drone2.png",
+      "/images/Drones/drone3.png",
+      "/images/Drones/drone4.png",
+      "/images/Drones/drone5.png"
+    ],
+    "originalPrice": 1499,
+    "offeredPrice": 1199,
+    "rating": 4.8,
+    "createdAt": "2025-04-01",
+    "reviews": [
+      {
+        "user": "droneGuru",
+        "comment": "Amazing flight control and stable footage!",
+        "rating": 5,
+        "profileImg": "/images/Drones/drone2.png"
+      }
+    ],
+    "features": ["4K Camera", "GPS", "30 min Flight", "Stabilization", "Auto Return"]
+  },
+  {
+    "id": 2,
+    "name": "SkyPro X4",
+    "category": "Drones",
+    "publisher": "aero_camz",
+    "description": "Compact drone with live streaming and HD recording.",
+    "stock": 35,
+    "sold": 17,
+    "productAvatar": "/images/Drones/drone2.png",
+    "images": [
+      "/images/Drones/drone1.png",
+      "/images/Drones/drone2.png",
+      "/images/Drones/drone3.png",
+      "/images/Drones/drone4.png",
+      "/images/Drones/drone5.png"
+    ],
+    "originalPrice": 1099,
+    "offeredPrice": 849,
+    "rating": 4.5,
+    "createdAt": "2025-04-05",
+    "reviews": [
+      {
+        "user": "hoverKid",
+        "comment": "Best drone under budget!",
+        "rating": 4,
+        "profileImg": "/images/Drones/drone3.png"
+      }
+    ],
+    "features": ["HD Camera", "Gesture Control", "Foldable", "One Key Return"]
+  },
+  {
+    "id": 3,
+    "name": "FlyLite Drone",
+    "category": "Drones",
+    "publisher": "lightvision",
+    "description": "Beginner-friendly drone with easy controls and safety features.",
+    "stock": 70,
+    "sold": 33,
+    "productAvatar": "/images/Drones/drone3.png",
+    "images": [
+      "/images/Drones/drone1.png",
+      "/images/Drones/drone2.png",
+      "/images/Drones/drone3.png",
+      "/images/Drones/drone4.png",
+      "/images/Drones/drone5.png"
+    ],
+    "originalPrice": 799,
+    "offeredPrice": 699,
+    "rating": 4.3,
+    "createdAt": "2025-04-04",
+    "reviews": [
+      {
+        "user": "starterDrone",
+        "comment": "Great for learning, very stable.",
+        "rating": 4,
+        "profileImg": "/images/Drones/drone5.png"
+      }
+    ],
+    "features": ["Altitude Hold", "Headless Mode", "Beginner Mode", "Safety Blades"]
+  },
+  {
+    "id": 4,
+    "name": "Zoom Falcon Pro",
+    "category": "Drones",
+    "publisher": "falconeer",
+    "description": "Premium drone with zoom lens and AI tracking.",
+    "stock": 25,
+    "sold": 12,
+    "productAvatar": "/images/Drones/drone4.png",
+    "images": [
+      "/images/Drones/drone1.png",
+      "/images/Drones/drone2.png",
+      "/images/Drones/drone3.png",
+      "/images/Drones/drone4.png",
+      "/images/Drones/drone5.png"
+    ],
+    "originalPrice": 1999,
+    "offeredPrice": 1649,
+    "rating": 4.9,
+    "createdAt": "2025-04-03",
+    "reviews": [
+      {
+        "user": "tracknZoom",
+        "comment": "AI tracking is surprisingly accurate.",
+        "rating": 5,
+        "profileImg": "/images/Drones/drone1.png"
+      }
+    ],
+    "features": ["Zoom Lens", "Obstacle Avoidance", "AI Object Tracking"]
+  },
+  {
+    "id": 5,
+    "name": "HoverEye Scout",
+    "category": "Drones",
+    "publisher": "vidvoyager",
+    "description": "Mini drone with dual camera and mobile app control.",
+    "stock": 60,
+    "sold": 44,
+    "productAvatar": "/images/Drones/drone5.png",
+    "images": [
+      "/images/Drones/drone1.png",
+      "/images/Drones/drone2.png",
+      "/images/Drones/drone3.png",
+      "/images/Drones/drone4.png",
+      "/images/Drones/drone5.png"
+    ],
+    "originalPrice": 699,
+    "offeredPrice": 549,
+    "rating": 4.1,
+    "createdAt": "2025-04-02",
+    "reviews": [
+      {
+        "user": "tinyflier",
+        "comment": "Small but powerful!",
+        "rating": 4,
+        "profileImg": "/images/Drones/drone4.png"
+      }
+    ],
+    "features": ["Dual Camera", "Remote App", "360 Flip", "LED Lights"]
+  },
+  {
+    "id": 6,
+    "name": "SnapShot Pro 12",
+    "category": "cameras",
+    "publisher": "shuttermax",
+    "description": "DSLR camera with 24MP resolution and fast autofocus.",
+    "stock": 45,
+    "sold": 29,
+    "productAvatar": "/images/Camera/camera2.png",
+    "images": [
+      "/images/Camera/camera2.png",
+      "/images/Camera/camera3.png",
+      "/images/Camera/camera4.png"
+    ],
+    "originalPrice": 1299,
+    "offeredPrice": 1049,
+    "rating": 4.6,
+    "createdAt": "2025-04-01",
+    "reviews": [
+      {
+        "user": "lensmaster",
+        "comment": "Fast shutter and great image clarity!",
+        "rating": 5,
+        "profileImg": "/images/Camera/camera4.png"
+      }
+    ],
+    "features": ["24MP", "Autofocus", "HDR", "WiFi"]
+  },
+  {
+    "id": 7,
+    "name": "PixelZoom A7",
+    "category": "cameras",
+    "publisher": "visionguru",
+    "description": "Mirrorless camera with compact body and 4K video support.",
+    "stock": 30,
+    "sold": 18,
+    "productAvatar": "/images/Camera/camera3.png",
+    "images": [
+      "/images/Camera/camera2.png",
+      "/images/Camera/camera3.png",
+      "/images/Camera/camera4.png"
+    ],
+    "originalPrice": 1499,
+    "offeredPrice": 1250,
+    "rating": 4.7,
+    "createdAt": "2025-03-30",
+    "reviews": [
+      {
+        "user": "proCapture",
+        "comment": "Perfect for travel vlogs!",
+        "rating": 5,
+        "profileImg": "/images/Camera/camera2.png"
+      }
+    ],
+    "features": ["Mirrorless", "4K Video", "Interchangeable Lens"]
+  },
+  {
+    "id": 8,
+    "name": "ZoomFlex Z10",
+    "category": "cameras",
+    "publisher": "camplus",
+    "description": "Point-and-shoot camera with optical zoom and image stabilization.",
+    "stock": 60,
+    "sold": 37,
+    "productAvatar": "/images/Camera/camera4.png",
+    "images": [
+      "/images/Camera/camera2.png",
+      "/images/Camera/camera3.png",
+      "/images/Camera/camera4.png"
+    ],
+    "originalPrice": 699,
+    "offeredPrice": 549,
+    "rating": 4.2,
+    "createdAt": "2025-03-28",
+    "reviews": [
+      {
+        "user": "snapwiz",
+        "comment": "Best compact camera for the price.",
+        "rating": 4,
+        "profileImg": "/images/Camera/camera3.png"
+      }
+    ],
+    "features": ["Optical Zoom", "Image Stabilization", "Portable"]
+  },
+  {
+    "id": 9,
+    "name": "iTab Air 11",
+    "category": "ipads",
+    "publisher": "tabtopia",
+    "description": "Lightweight iPad with A13 chip and Retina display.",
+    "stock": 40,
+    "sold": 21,
+    "productAvatar": "/images/Ipad/ipad1.png",
+    "images": [
+      "/images/Ipad/ipad1.png",
+      "/images/Ipad/ipad2.png",
+      "/images/Ipad/ipad3.png"
+    ],
+    "originalPrice": 899,
+    "offeredPrice": 749,
+    "rating": 4.5,
+    "createdAt": "2025-03-25",
+    "reviews": [
+      {
+        "user": "applehead",
+        "comment": "Super smooth and portable.",
+        "rating": 5,
+        "profileImg": "/images/Ipad/ipad2.png"
+      }
+    ],
+    "features": ["A13 Bionic", "Retina Display", "iOS 17"]
+  },
+  {
+    "id": 10,
+    "name": "iNote Pro 12.9",
+    "category": "ipads",
+    "publisher": "drawmagic",
+    "description": "Professional-grade iPad with Apple Pencil support.",
+    "stock": 25,
+    "sold": 11,
+    "productAvatar": "/images/Ipad/ipad2.png",
+    "images": [
+      "/images/Ipad/ipad1.png",
+      "/images/Ipad/ipad2.png",
+      "/images/Ipad/ipad3.png"
+    ],
+    "originalPrice": 1099,
+    "offeredPrice": 979,
+    "rating": 4.8,
+    "createdAt": "2025-03-22",
+    "reviews": [
+      {
+        "user": "prosketch",
+        "comment": "Great for digital art and productivity.",
+        "rating": 5,
+        "profileImg": "/images/Ipad/ipad1.png"
+      }
+    ],
+    "features": ["Apple Pencil 2", "ProMotion", "USB-C"]
+  },
+  {
+    "id": 11,
+    "name": "iRead Mini",
+    "category": "ipads",
+    "publisher": "readplus",
+    "description": "Compact iPad perfect for reading and note-taking.",
+    "stock": 70,
+    "sold": 46,
+    "productAvatar": "/images/Ipad/ipad3.png",
+    "images": [
+      "/images/Ipad/ipad1.png",
+      "/images/Ipad/ipad2.png",
+      "/images/Ipad/ipad3.png"
+    ],
+    "originalPrice": 599,
+    "offeredPrice": 499,
+    "rating": 4.4,
+    "createdAt": "2025-03-20",
+    "reviews": [
+      {
+        "user": "lightreader",
+        "comment": "Perfect for ebooks and notes.",
+        "rating": 4,
+        "profileImg": "/images/Ipad/ipad2.png"
+      }
+    ],
+    "features": ["Compact Size", "Long Battery", "Smart Keyboard Support"]
+  },
+  {
+    "id": 12,
+    "name": "Nova X1 Pro",
+    "category": "mobiles",
+    "publisher": "techgeekz",
+    "description": "Flagship smartphone with AMOLED display and quad camera setup.",
+    "stock": 80,
+    "sold": 60,
+    "badge":"New",
+    "productAvatar": "/images/Smartphones/mobile1.png",
+    "images": [
+      "/images/Smartphones/mobile1.png",
+      "/images/Smartphones/mobile2.png",
+      "/images/Smartphones/mobile3.png",
+      "/images/Smartphones/mobile4.png"
+    ],
+    "originalPrice": 999,
+    "offeredPrice": 849,
+    "rating": 4.7,
+    "createdAt": "2025-04-06",
+    "reviews": [
+      {
+        "user": "xuser007",
+        "comment": "Beast performance and stunning camera!",
+        "rating": 5,
+        "profileImg": "/images/Smartphones/mobile2.png"
+      }
+    ],
+    "features": ["AMOLED", "Quad Camera", "Fast Charging", "5G"]
+  },
+  {
+    "id": 13,
+    "name": "Edge Lite 6",
+    "category": "mobiles",
+    "publisher": "mobiplus",
+    "description": "Slim and sleek smartphone with powerful battery backup.",
+    "stock": 65,
+    "sold": 43,
+    "badge":"Sale",
+    "productAvatar": "/images/Smartphones/mobile2.png",
+    "images": [
+      "/images/Smartphones/mobile1.png",
+      "/images/Smartphones/mobile2.png",
+      "/images/Smartphones/mobile3.png",
+      "/images/Smartphones/mobile4.png"
+    ],
+    "originalPrice": 749,
+    "offeredPrice": 659,
+    "rating": 4.4,
+    "createdAt": "2025-03-29",
+    "reviews": [
+      {
+        "user": "mobilefreak",
+        "comment": "Solid battery and lightweight.",
+        "rating": 4,
+        "profileImg": "/images/Smartphones/mobile4.png"
+      }
+    ],
+    "features": ["Lightweight", "Long Battery", "Face Unlock"]
+  },
+  {
+    "id": 14,
+    "name": "Galaxy Neo 5",
+    "category": "mobiles",
+    "publisher": "neomobile",
+    "description": "Mid-range device with excellent camera and storage.",
+    "stock": 90,
+    "sold": 58,
+    "badge":"New",
+    "productAvatar": "/images/Smartphones/mobile3.png",
+    "images": [
+      "/images/Smartphones/mobile1.png",
+      "/images/Smartphones/mobile2.png",
+      "/images/Smartphones/mobile3.png",
+      "/images/Smartphones/mobile4.png"
+    ],
+    "originalPrice": 599,
+    "offeredPrice": 499,
+    "rating": 4.3,
+    "createdAt": "2025-03-26",
+    "reviews": [
+      {
+        "user": "camerakid",
+        "comment": "Camera performance exceeded my expectations.",
+        "rating": 4,
+        "profileImg": "/images/Smartphones/mobile1.png"
+      }
+    ],
+    "features": ["64MP Camera", "128GB Storage", "Fingerprint Sensor"]
+  },
+  {
+    "id": 15,
+    "name": "Pixel Spark 3",
+    "category": "mobiles",
+    "publisher": "sparkmobile",
+    "description": "Compact phone with pure Android and fast updates.",
+    "stock": 55,
+    "sold": 39,
+    "badge":"Sale",
+    "productAvatar": "/images/Smartphones/mobile4.png",
+    "images": [
+      "/images/Smartphones/mobile1.png",
+      "/images/Smartphones/mobile2.png",
+      "/images/Smartphones/mobile3.png",
+      "/images/Smartphones/mobile4.png"
+    ],
+    "originalPrice": 499,
+    "offeredPrice": 429,
+    "rating": 4.2,
+    "createdAt": "2025-03-23",
+    "reviews": [
+      {
+        "user": "droidfan",
+        "comment": "Clean UI and great compact feel.",
+        "rating": 4,
+        "profileImg": "/images/Smartphones/mobile3.png"
+      }
+    ],
+    "features": ["Pure Android", "Compact", "Fast Updates"]
+  },
+  {
+    "id": 16,
+    "name": "TimeTrack S1",
+    "category": "headphones",
+    "publisher": "fitorbit",
+    "description": "Smartwatch with heart-rate monitor and AMOLED screen.",
+    "stock": 50,
+    "sold": 33,
+    "productAvatar": "/images/Smartwatch/watch1.png",
+    "images": [
+      "/images/Smartwatch/watch1.png",
+      "/images/Smartwatch/watch2.png",
+      "/images/Smartwatch/watch3.png"
+    ],
+    "originalPrice": 299,
+    "offeredPrice": 249,
+    "rating": 4.4,
+    "createdAt": "2025-03-21",
+    "reviews": [
+      {
+        "user": "healthguru",
+        "comment": "Excellent fitness tracking and battery.",
+        "rating": 5,
+        "profileImg": "/images/Smartwatch/watch2.png"
+      }
+    ],
+    "features": ["Heart Rate", "AMOLED", "Fitness Modes"]
+  },
+  {
+    "id": 17,
+    "name": "ZenTime 360",
+    "category": "headphones",
+    "publisher": "wristtech",
+    "description": "Premium smartwatch with metal body and wireless charging.",
+    "stock": 38,
+    "sold": 25,
+    "productAvatar": "/images/Smartwatch/watch2.png",
+    "images": [
+      "/images/Smartwatch/watch1.png",
+      "/images/Smartwatch/watch2.png",
+      "/images/Smartwatch/watch3.png"
+    ],
+    "originalPrice": 349,
+    "offeredPrice": 289,
+    "rating": 4.5,
+    "createdAt": "2025-03-19",
+    "reviews": [
+      {
+        "user": "classytech",
+        "comment": "Feels and looks like a premium watch.",
+        "rating": 5,
+        "profileImg": "/images/Smartwatch/watch3.png"
+      }
+    ],
+    "features": ["Wireless Charging", "Metal Body", "Waterproof"]
+  },
+  {
+    "id": 18,
+    "name": "PulseFit Mini",
+    "category": "headphones",
+    "publisher": "fitzone",
+    "description": "Compact smart band with sleep tracking and step counter.",
+    "stock": 70,
+    "sold": 41,
+    "productAvatar": "/images/Smartwatch/watch3.png",
+    "images": [
+      "/images/Smartwatch/watch1.png",
+      "/images/Smartwatch/watch2.png",
+      "/images/Smartwatch/watch3.png"
+    ],
+    "originalPrice": 199,
+    "offeredPrice": 159,
+    "rating": 4.1,
+    "createdAt": "2025-04-06",
+    "reviews": [
+      {
+        "user": "stepmaster",
+        "comment": "Light and accurate, great for daily use.",
+        "rating": 4,
+        "profileImg": "/images/Smartwatch/watch1.png"
+      }
+    ],
+    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+  },
+  {
+    "id": 19,
+    "name": "PulseFit Mini",
+    "category": "laptops",
+    "publisher": "fitzone",
+    "description": "Compact smart band with sleep tracking and step counter.",
+    "stock": 70,
+    "sold": 41,
+    "productAvatar": "/images/Laptop/laptop1.png",
+    "images": [
+      "/images/Smartwatch/laptop4.png",
+      "/images/Smartwatch/laptop3.png",
+      "/images/Smartwatch/laptop2.png"
+    ],
+    "originalPrice": 199,
+    "offeredPrice": 159,
+    "rating": 4.1,
+    "createdAt": "2025-04-06",
+    "reviews": [
+      {
+        "user": "stepmaster",
+        "comment": "Light and accurate, great for daily use.",
+        "rating": 4,
+        "profileImg": "/images/Smartwatch/watch1.png"
+      }
+    ],
+    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+  },
+  {
+    "id": 20,
+    "name": "PulseFit Mini",
+    "category": "laptops",
+    "publisher": "fitzone",
+    "description": "Compact smart band with sleep tracking and step counter.",
+    "stock": 70,
+    "sold": 41,
+    "productAvatar": "/images/Laptop/laptop2.png",
+    "images": [
+      "/images/Smartwatch/laptop4.png",
+      "/images/Smartwatch/laptop3.png",
+      "/images/Smartwatch/laptop2.png"
+    ],
+    "originalPrice": 199,
+    "offeredPrice": 159,
+    "rating": 4.1,
+    "createdAt": "2025-03-16",
+    "reviews": [
+      {
+        "user": "stepmaster",
+        "comment": "Light and accurate, great for daily use.",
+        "rating": 4,
+        "profileImg": "/images/Smartwatch/watch1.png"
+      }
+    ],
+    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+  },
+  {
+    "id": 21,
+    "name": "PulseFit Mini",
+    "category": "laptops",
+    "publisher": "fitzone",
+    "description": "Compact smart band with sleep tracking and step counter.",
+    "stock": 70,
+    "sold": 41,
+    "productAvatar": "/images/Laptop/laptop3.png",
+    "images": [
+      "/images/Smartwatch/laptop4.png",
+      "/images/Smartwatch/laptop3.png",
+      "/images/Smartwatch/laptop2.png"
+    ],
+    "originalPrice": 199,
+    "offeredPrice": 159,
+    "rating": 4.1,
+    "createdAt": "2025-03-16",
+    "reviews": [
+      {
+        "user": "stepmaster",
+        "comment": "Light and accurate, great for daily use.",
+        "rating": 4,
+        "profileImg": "/images/Smartwatch/watch1.png"
+      }
+    ],
+    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+  },
+  {
+    "id": 22,
+    "name": "PulseFit Mini",
+    "category": "laptops",
+    "publisher": "fitzone",
+    "description": "Compact smart band with sleep tracking and step counter.",
+    "stock": 70,
+    "sold": 41,
+    "productAvatar": "/images/Laptop/laptop4.png",
+    "images": [
+      "/images/Smartwatch/laptop4.png",
+      "/images/Smartwatch/laptop3.png",
+      "/images/Smartwatch/laptop2.png"
+    ],
+    "originalPrice": 199,
+    "offeredPrice": 159,
+    "rating": 4.1,
+    "createdAt": "2025-03-16",
+    "reviews": [
+      {
+        "user": "stepmaster",
+        "comment": "Light and accurate, great for daily use.",
+        "rating": 4,
+        "profileImg": "/images/Smartwatch/watch1.png"
+      }
+    ],
+    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+  },
+  {
+    "id": 23,
+    "name": "PulseFit Mini",
+    "category": "mobiles",
+    "publisher": "fitzone",
+    "description": "Compact smart band with sleep tracking and step counter.",
+    "stock": 70,
+    "sold": 41,
+    "productAvatar": "/images/Laptop/laptop4.png",
+    "images": [
+      "/images/Smartwatch/laptop4.png",
+      "/images/Smartwatch/laptop3.png",
+      "/images/Smartwatch/laptop2.png"
+    ],
+    "originalPrice": 199,
+    "offeredPrice": 159,
+    "rating": 4.1,
+    "createdAt": "2025-03-16",
+    "reviews": [
+      {
+        "user": "stepmaster",
+        "comment": "Light and accurate, great for daily use.",
+        "rating": 4,
+        "profileImg": "/images/Smartwatch/watch1.png"
+      }
+    ],
+    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+  }
+]

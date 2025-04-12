@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1744365205989,
+    "name": "Anish Gautam",
+    "username": "admin",
+    "email": "anish@gmail.com",
+    "password": "$2b$10$txqlzCt6iRCQl/ZgbIpRXeSTB0PBVc7w3cCK00IgrEgRYhVYHhaSK",
+    "userType": "buyer",
+    "reviews": [],
+    "products": [],
+    "cart": [
+      {
+        "productid": 12,
+        "quantity": 5,
+        "offeredPrice": 849
+      }
+    ],
+    "wishlist": [
+      {
+        "productId": 19
+      },
+      {
+        "productId": 18
+      },
+      {
+        "productId": 12
+      },
+      {
+        "productId": 14
+      },
+      {
+        "productId": 20
+      }
+    ]
+  }
+]
