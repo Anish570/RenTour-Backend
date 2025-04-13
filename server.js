@@ -1,53 +1,57 @@
-import express from "express";
-import cors from "cors";
-import authRoutes from "./routes/authRoutes.js";
-import userRoutes from "./routes/userRoutes.js";
-import productRoutes from "./routes/productRoutes.js";
-import { config } from "dotenv";
-config();
+const express = require("express");
+const cors = require("cors");
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
+const userRoutes = require("./routes/userRoutes"); // Adjust path if needed
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
-const allowedOrigins = [
-  "https://new-rentour.vercel.app",
-  "http://localhost:5173",
-  "http://localhost:3000",
-  "http://127.0.0.1:5173",
-  "http://127.0.0.1:5174",
-];
+// CORS Configuration
+const allowedOrigin = "https://new-rentour.vercel.app";
 
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-  allowedHeaders: [
-    "Origin",
-    "X-Requested-With",
-    "Content-Type",
-    "Accept",
-    "Authorization",
-  ],
-};
+app.use(
+  cors({
+    origin: allowedOrigin,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: [
+      "Origin",
+      "X-Requested-With",
+      "Content-Type",
+      "Accept",
+      "Authorization",
+    ],
+    credentials: true,
+  })
+);
 
-app.use(cors(corsOptions));
+// Middleware
 app.use(express.json());
+app.use(cookieParser());
 
-// Routes
+// Session Configuration
+app.use(
+  session({
+    secret: "yourSecretKey", // Change this in production
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: true, // true if using HTTPS (you are)
+      sameSite: "none", // Needed for cross-site cookies
+      httpOnly: true, // Protects from XSS
+    },
+  })
+);
+
+// Test route
 app.get("/", (req, res) => {
-  res.send("Hello there from RenTour Backend");
+  res.send("Backend is running!");
 });
 
-app.use("/api/auth", authRoutes);
+// User routes
 app.use("/api/user", userRoutes);
-app.use("/api/products", productRoutes);
 
-const PORT = process.env.PORT || 8000;
+// Start server
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`Server listening on port ${PORT}`);
 });
