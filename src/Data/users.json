@@ -13,6 +13,16 @@
         "productid": 12,
         "quantity": 5,
         "offeredPrice": 849
+      },
+      {
+        "productid": 18,
+        "quantity": 1,
+        "offeredPrice": 159
+      },
+      {
+        "productid": 19,
+        "quantity": 1,
+        "offeredPrice": 159
       }
     ],
     "wishlist": [
@@ -30,6 +40,40 @@
       },
       {
         "productId": 20
+      }
+    ]
+  },
+  {
+    "id": 1744476253137,
+    "name": "Anish Gautam",
+    "username": "admin1",
+    "email": "anish1@gmail.com",
+    "password": "$2b$10$0tt5uFstCl0tKGnAwJROcePjZf/H2RwZ1kMbFyTs13W54aChpceCm",
+    "userType": "buyer",
+    "reviews": [],
+    "products": [],
+    "cart": [],
+    "wishlist": []
+  },
+  {
+    "id": 1744478539040,
+    "name": "Rhiannon Grimes",
+    "username": "mivewijuz",
+    "email": "tysoh@mailinator.com",
+    "password": "$2b$10$zDYJa.IBqDRFzyJciLsJkelAr4VDpPaF4NT9b8l2pDtb0YTzAh3N.",
+    "userType": "buyer",
+    "reviews": [],
+    "products": [],
+    "cart": [
+      {
+        "productid": 11,
+        "quantity": 1,
+        "offeredPrice": 499
+      }
+    ],
+    "wishlist": [
+      {
+        "productId": 11
       }
     ]
   }
