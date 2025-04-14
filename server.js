@@ -9,21 +9,33 @@ config();
 const app = express();
 
 const allowedOrigin = "https://new-rentour.vercel.app";
-// ✅ Allow only this origin
+
 const corsOptions = {
   origin: allowedOrigin,
   credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-  allowedHeaders: [
-    "Origin",
-    "X-Requested-With",
-    "Content-Type",
-    "Accept",
-    "Authorization",
-  ],
 };
 
 app.use(cors(corsOptions));
+
+// ✅ Handle preflight manually for full control
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", allowedOrigin);
+  res.header("Access-Control-Allow-Credentials", "true");
+  res.header(
+    "Access-Control-Allow-Methods",
+    "GET,POST,PUT,DELETE,PATCH,OPTIONS"
+  );
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin,X-Requested-With,Content-Type,Accept,Authorization"
+  );
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(200);
+  }
+
+  next();
+});
 
 app.use(express.json());
 
@@ -32,7 +44,7 @@ app.get("/", (req, res) => {
   res.send("Hello there from RenTour Backend");
 });
 
-// All routes
+// Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/products", productRoutes);
