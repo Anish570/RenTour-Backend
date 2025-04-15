@@ -76,5 +76,17 @@
         "productId": 11
       }
     ]
+  },
+  {
+    "id": 1744600225690,
+    "name": "Anish Gautam",
+    "username": "admin2",
+    "email": "anish5@gmail.com",
+    "password": "$2b$10$CYRVN11hm8rn/gJ5lERJ0eEGO0v5bk8w349CXb2mOqOsG0arh.fAi",
+    "userType": "buyer",
+    "reviews": [],
+    "products": [],
+    "cart": [],
+    "wishlist": []
   }
 ]

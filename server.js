@@ -8,10 +8,21 @@ config();
 
 const app = express();
 
-const allowedOrigin = "https://new-rentour.vercel.app";
+// ✅ Allow both production and local dev origin
+const allowedOrigins = [
+  "https://new-rentour.vercel.app",
+  "http://localhost:5173",
+];
 
+// Setup cors middleware
 const corsOptions = {
-  origin: allowedOrigin,
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
 };
 
@@ -19,7 +30,11 @@ app.use(cors(corsOptions));
 
 // ✅ Handle preflight manually for full control
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", allowedOrigin);
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.header("Access-Control-Allow-Origin", origin);
+  }
+
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
     "Access-Control-Allow-Methods",
@@ -44,7 +59,7 @@ app.get("/", (req, res) => {
   res.send("Hello there from RenTour Backend");
 });
 
-// Routes
+// API routes
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/products", productRoutes);
