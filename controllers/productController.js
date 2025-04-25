@@ -83,3 +83,25 @@ export const getProductsByCategory = async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 };
+
+export const searchProducts = async (req, res) => {
+  try {
+    const products = await readProductsFile();
+    const query = req.query.q?.toLowerCase();
+
+    if (!query) {
+      return res.status(400).json({ message: "Search query missing" });
+    }
+
+    // Case-insensitive name match
+
+    const filtered = products.filter((p) =>
+      p.name.toLowerCase().includes(query)
+    );
+
+    res.status(200).json(filtered);
+  } catch (error) {
+    console.error("Search error:", error);
+    res.status(500).json({ message: "Server error during search" });
+  }
+};

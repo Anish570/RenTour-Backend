@@ -88,5 +88,17 @@
     "products": [],
     "cart": [],
     "wishlist": []
+  },
+  {
+    "id": 1745492659275,
+    "name": "Test user",
+    "username": "test10",
+    "email": "test10@gmail.com",
+    "password": "$2b$10$M8tKLQHJe4ecGa0vJV9bz.ggXvZCW6RObhUlC/TvIoxRsfjyZeTD2",
+    "userType": "buyer",
+    "reviews": [],
+    "products": [],
+    "cart": [],
+    "wishlist": []
   }
 ]
