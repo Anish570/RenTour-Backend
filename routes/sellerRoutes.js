@@ -5,8 +5,6 @@ import {
   deleteMyProduct,
   getMyProducts,
   updateMyProduct,
-  // deleteProduct,
-  // updateProduct,
 } from "../controllers/sellerController.js";
 import upload from "../middleware/uploadMiddleware.js";
 const router = express.Router();

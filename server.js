@@ -62,7 +62,7 @@ app.get("/", (req, res) => {
   res.send("Hello there from RenTour Backend");
 });
 
-app.use("/images", express.static(path.join("public", "images")));
+app.use("/api/images", express.static(path.join("public", "images")));
 
 // API routes
 app.use("/api/product", sellerRoutes);
