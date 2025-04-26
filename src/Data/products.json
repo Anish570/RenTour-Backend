@@ -27,7 +27,13 @@
         "profileImg": "/images/Drones/drone2.png"
       }
     ],
-    "features": ["4K Camera", "GPS", "30 min Flight", "Stabilization", "Auto Return"]
+    "features": [
+      "4K Camera",
+      "GPS",
+      "30 min Flight",
+      "Stabilization",
+      "Auto Return"
+    ]
   },
   {
     "id": 2,
@@ -57,7 +63,12 @@
         "profileImg": "/images/Drones/drone3.png"
       }
     ],
-    "features": ["HD Camera", "Gesture Control", "Foldable", "One Key Return"]
+    "features": [
+      "HD Camera",
+      "Gesture Control",
+      "Foldable",
+      "One Key Return"
+    ]
   },
   {
     "id": 3,
@@ -87,7 +98,12 @@
         "profileImg": "/images/Drones/drone5.png"
       }
     ],
-    "features": ["Altitude Hold", "Headless Mode", "Beginner Mode", "Safety Blades"]
+    "features": [
+      "Altitude Hold",
+      "Headless Mode",
+      "Beginner Mode",
+      "Safety Blades"
+    ]
   },
   {
     "id": 4,
@@ -117,7 +133,11 @@
         "profileImg": "/images/Drones/drone1.png"
       }
     ],
-    "features": ["Zoom Lens", "Obstacle Avoidance", "AI Object Tracking"]
+    "features": [
+      "Zoom Lens",
+      "Obstacle Avoidance",
+      "AI Object Tracking"
+    ]
   },
   {
     "id": 5,
@@ -147,7 +167,12 @@
         "profileImg": "/images/Drones/drone4.png"
       }
     ],
-    "features": ["Dual Camera", "Remote App", "360 Flip", "LED Lights"]
+    "features": [
+      "Dual Camera",
+      "Remote App",
+      "360 Flip",
+      "LED Lights"
+    ]
   },
   {
     "id": 6,
@@ -175,7 +200,12 @@
         "profileImg": "/images/Camera/camera4.png"
       }
     ],
-    "features": ["24MP", "Autofocus", "HDR", "WiFi"]
+    "features": [
+      "24MP",
+      "Autofocus",
+      "HDR",
+      "WiFi"
+    ]
   },
   {
     "id": 7,
@@ -203,7 +233,11 @@
         "profileImg": "/images/Camera/camera2.png"
       }
     ],
-    "features": ["Mirrorless", "4K Video", "Interchangeable Lens"]
+    "features": [
+      "Mirrorless",
+      "4K Video",
+      "Interchangeable Lens"
+    ]
   },
   {
     "id": 8,
@@ -231,7 +265,11 @@
         "profileImg": "/images/Camera/camera3.png"
       }
     ],
-    "features": ["Optical Zoom", "Image Stabilization", "Portable"]
+    "features": [
+      "Optical Zoom",
+      "Image Stabilization",
+      "Portable"
+    ]
   },
   {
     "id": 9,
@@ -259,7 +297,11 @@
         "profileImg": "/images/Ipad/ipad2.png"
       }
     ],
-    "features": ["A13 Bionic", "Retina Display", "iOS 17"]
+    "features": [
+      "A13 Bionic",
+      "Retina Display",
+      "iOS 17"
+    ]
   },
   {
     "id": 10,
@@ -287,7 +329,11 @@
         "profileImg": "/images/Ipad/ipad1.png"
       }
     ],
-    "features": ["Apple Pencil 2", "ProMotion", "USB-C"]
+    "features": [
+      "Apple Pencil 2",
+      "ProMotion",
+      "USB-C"
+    ]
   },
   {
     "id": 11,
@@ -315,7 +361,11 @@
         "profileImg": "/images/Ipad/ipad2.png"
       }
     ],
-    "features": ["Compact Size", "Long Battery", "Smart Keyboard Support"]
+    "features": [
+      "Compact Size",
+      "Long Battery",
+      "Smart Keyboard Support"
+    ]
   },
   {
     "id": 12,
@@ -325,7 +375,7 @@
     "description": "Flagship smartphone with AMOLED display and quad camera setup.",
     "stock": 80,
     "sold": 60,
-    "badge":"New",
+    "badge": "New",
     "productAvatar": "/images/Smartphones/mobile1.png",
     "images": [
       "/images/Smartphones/mobile1.png",
@@ -345,7 +395,12 @@
         "profileImg": "/images/Smartphones/mobile2.png"
       }
     ],
-    "features": ["AMOLED", "Quad Camera", "Fast Charging", "5G"]
+    "features": [
+      "AMOLED",
+      "Quad Camera",
+      "Fast Charging",
+      "5G"
+    ]
   },
   {
     "id": 13,
@@ -355,7 +410,7 @@
     "description": "Slim and sleek smartphone with powerful battery backup.",
     "stock": 65,
     "sold": 43,
-    "badge":"Sale",
+    "badge": "Sale",
     "productAvatar": "/images/Smartphones/mobile2.png",
     "images": [
       "/images/Smartphones/mobile1.png",
@@ -375,7 +430,11 @@
         "profileImg": "/images/Smartphones/mobile4.png"
       }
     ],
-    "features": ["Lightweight", "Long Battery", "Face Unlock"]
+    "features": [
+      "Lightweight",
+      "Long Battery",
+      "Face Unlock"
+    ]
   },
   {
     "id": 14,
@@ -385,7 +444,7 @@
     "description": "Mid-range device with excellent camera and storage.",
     "stock": 90,
     "sold": 58,
-    "badge":"New",
+    "badge": "New",
     "productAvatar": "/images/Smartphones/mobile3.png",
     "images": [
       "/images/Smartphones/mobile1.png",
@@ -405,7 +464,11 @@
         "profileImg": "/images/Smartphones/mobile1.png"
       }
     ],
-    "features": ["64MP Camera", "128GB Storage", "Fingerprint Sensor"]
+    "features": [
+      "64MP Camera",
+      "128GB Storage",
+      "Fingerprint Sensor"
+    ]
   },
   {
     "id": 15,
@@ -415,7 +478,7 @@
     "description": "Compact phone with pure Android and fast updates.",
     "stock": 55,
     "sold": 39,
-    "badge":"Sale",
+    "badge": "Sale",
     "productAvatar": "/images/Smartphones/mobile4.png",
     "images": [
       "/images/Smartphones/mobile1.png",
@@ -435,7 +498,11 @@
         "profileImg": "/images/Smartphones/mobile3.png"
       }
     ],
-    "features": ["Pure Android", "Compact", "Fast Updates"]
+    "features": [
+      "Pure Android",
+      "Compact",
+      "Fast Updates"
+    ]
   },
   {
     "id": 16,
@@ -463,7 +530,11 @@
         "profileImg": "/images/Smartwatch/watch2.png"
       }
     ],
-    "features": ["Heart Rate", "AMOLED", "Fitness Modes"]
+    "features": [
+      "Heart Rate",
+      "AMOLED",
+      "Fitness Modes"
+    ]
   },
   {
     "id": 17,
@@ -491,7 +562,11 @@
         "profileImg": "/images/Smartwatch/watch3.png"
       }
     ],
-    "features": ["Wireless Charging", "Metal Body", "Waterproof"]
+    "features": [
+      "Wireless Charging",
+      "Metal Body",
+      "Waterproof"
+    ]
   },
   {
     "id": 18,
@@ -519,7 +594,11 @@
         "profileImg": "/images/Smartwatch/watch1.png"
       }
     ],
-    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+    "features": [
+      "Sleep Tracking",
+      "Step Counter",
+      "Water Resistant"
+    ]
   },
   {
     "id": 19,
@@ -547,7 +626,11 @@
         "profileImg": "/images/Smartwatch/watch1.png"
       }
     ],
-    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+    "features": [
+      "Sleep Tracking",
+      "Step Counter",
+      "Water Resistant"
+    ]
   },
   {
     "id": 20,
@@ -575,7 +658,11 @@
         "profileImg": "/images/Smartwatch/watch1.png"
       }
     ],
-    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+    "features": [
+      "Sleep Tracking",
+      "Step Counter",
+      "Water Resistant"
+    ]
   },
   {
     "id": 21,
@@ -603,7 +690,11 @@
         "profileImg": "/images/Smartwatch/watch1.png"
       }
     ],
-    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+    "features": [
+      "Sleep Tracking",
+      "Step Counter",
+      "Water Resistant"
+    ]
   },
   {
     "id": 22,
@@ -631,7 +722,11 @@
         "profileImg": "/images/Smartwatch/watch1.png"
       }
     ],
-    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+    "features": [
+      "Sleep Tracking",
+      "Step Counter",
+      "Water Resistant"
+    ]
   },
   {
     "id": 23,
@@ -659,6 +754,77 @@
         "profileImg": "/images/Smartwatch/watch1.png"
       }
     ],
-    "features": ["Sleep Tracking", "Step Counter", "Water Resistant"]
+    "features": [
+      "Sleep Tracking",
+      "Step Counter",
+      "Water Resistant"
+    ]
+  },
+  {
+    "id": 1745685337502,
+    "name": "anish product",
+    "category": "Drones",
+    "publisher": "anish",
+    "description": "anish wrote this description",
+    "stock": 2,
+    "sold": 0,
+    "images": [],
+    "originalPrice": 120,
+    "offeredPrice": 100,
+    "rating": 0,
+    "createdAt": "2025-04-26",
+    "reviews": [],
+    "features": [
+      "anish knows the features"
+    ]
+  },
+  {
+    "id": 1745686441853,
+    "name": "anish new product",
+    "category": "Drones",
+    "publisher": "anish is the publisher",
+    "description": "anish know better descriptions",
+    "stock": 3,
+    "sold": 0,
+    "productAvatar": "/images/Drones/1745686441818.jpg",
+    "images": [
+      "/images/Drones/1745686441819.png",
+      "/images/Drones/1745686441837.png",
+      "/images/Drones/1745686441841.jpg"
+    ],
+    "originalPrice": 200,
+    "offeredPrice": 205,
+    "rating": 0,
+    "createdAt": "2025-04-26",
+    "reviews": [],
+    "features": [
+      "[\"fist good\"",
+      "\"second good\"]"
+    ]
+  },
+  {
+    "id": 1745686977883,
+    "name": "anish new product",
+    "category": "Mobiles",
+    "publisher": 1745683951710,
+    "description": "anish know better descriptions",
+    "stock": 3,
+    "sold": 0,
+    "productAvatar": "/images/Mobiles/1745686977850.jpg",
+    "images": [
+      "/images/Mobiles/1745686977853.png",
+      "/images/Mobiles/1745686977867.png",
+      "/images/Mobiles/1745686977874.jpg"
+    ],
+    "originalPrice": 200,
+    "offeredPrice": 205,
+    "rating": 0,
+    "createdAt": "2025-04-26",
+    "reviews": [],
+    "features": [
+      "first one good",
+      "second good",
+      "third one"
+    ]
   }
 ]

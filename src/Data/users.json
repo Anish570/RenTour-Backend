@@ -100,5 +100,17 @@
     "products": [],
     "cart": [],
     "wishlist": []
+  },
+  {
+    "id": 1745683951710,
+    "name": "Seller Account",
+    "username": "seller",
+    "email": "seller@gmail.com",
+    "password": "$2b$10$Lu./bmwDMiLZaXLPALQ1ducodpnOvpaTlAs4thEM0w.XkXrGsasBi",
+    "userType": "buyer",
+    "reviews": [],
+    "products": [],
+    "cart": [],
+    "wishlist": []
   }
 ]

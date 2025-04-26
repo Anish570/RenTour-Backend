@@ -24,3 +24,13 @@ export const readProductsFile = () => {
     });
   });
 };
+
+// ✅ Write Products
+export const writeProductsFile = (products) => {
+  try {
+    fs.writeFileSync(filePath, JSON.stringify(products, null, 2), "utf-8");
+  } catch (error) {
+    console.error("Error writing products.json", error);
+    throw new Error("Error writing products.json");
+  }
+};
