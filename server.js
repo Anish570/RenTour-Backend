@@ -3,7 +3,9 @@ import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+import sellerRoutes from "./routes/sellerRoutes.js";
 import { config } from "dotenv";
+import path from "path";
 config();
 
 const app = express();
@@ -60,7 +62,10 @@ app.get("/", (req, res) => {
   res.send("Hello there from RenTour Backend");
 });
 
+app.use("/images", express.static(path.join("public", "images")));
+
 // API routes
+app.use("/api/product", sellerRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/products", productRoutes);
