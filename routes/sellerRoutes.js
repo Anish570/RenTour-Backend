@@ -2,9 +2,10 @@ import express from "express";
 import { authMiddleware } from "../middleware/authMiddleware.js";
 import {
   createProduct,
+  deleteMyProduct,
+  getMyProducts,
+  updateMyProduct,
   // deleteProduct,
-  // getAllProducts,
-  // getProductById,
   // updateProduct,
 } from "../controllers/sellerController.js";
 import upload from "../middleware/uploadMiddleware.js";
@@ -19,11 +20,16 @@ router.post(
   ]),
   createProduct
 );
-// router.get("/", getAllProducts);
-// router.get("/:id", getProductById);
-// router.put("/:id", authMiddleware, upload.array("images", 5), updateProduct);
-// router.delete("/:id", authMiddleware, deleteProduct);
 
+router.get("/my-products", authMiddleware, getMyProducts);
+router.delete("/:id", authMiddleware, deleteMyProduct);
+router.put(
+  "/:id",
+  authMiddleware,
+  upload.fields([
+    { name: "productAvatar", maxCount: 1 },
+    { name: "images", maxCount: 5 },
+  ]),
+  updateMyProduct
+);
 export default router;
-
-
