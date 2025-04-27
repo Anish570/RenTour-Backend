@@ -759,5 +759,76 @@
       "Step Counter",
       "Water Resistant"
     ]
+  },
+  {
+    "id": 1745722476393,
+    "name": "anish new product",
+    "category": "cameras",
+    "publisher": 1745683951710,
+    "description": "anish know better descriptions",
+    "stock": 3,
+    "sold": 0,
+    "productAvatar": "/images/cameras/1745732711655.jpg",
+    "images": [
+      "/images/cameras/1745732727026.png",
+      "/images/cameras/1745732727033.jpg"
+    ],
+    "originalPrice": 200,
+    "offeredPrice": 205,
+    "rating": 0,
+    "createdAt": "2025-04-27",
+    "reviews": [],
+    "features": [
+      "feature1",
+      "feature2"
+    ]
+  },
+  {
+    "id": 1745722704068,
+    "name": "New one",
+    "category": "Drones",
+    "publisher": 1745683951710,
+    "description": "This is not a Drone",
+    "stock": 2,
+    "sold": 0,
+    "productAvatar": "/images/Drones/1745722704031.png",
+    "images": [
+      "/images/Drones/1745722704042.png",
+      "/images/Drones/1745722704056.jpg"
+    ],
+    "originalPrice": 1000,
+    "offeredPrice": 9000,
+    "rating": 0,
+    "createdAt": "2025-04-27",
+    "reviews": [],
+    "features": [
+      "feature1",
+      "feature2"
+    ]
+  },
+  {
+    "id": 1745724059545,
+    "name": "last test",
+    "category": "Cameras",
+    "publisher": 1745683951710,
+    "description": "last test",
+    "stock": 0,
+    "sold": 0,
+    "productAvatar": "/images/Cameras/1745731975597.png",
+    "images": [
+      "/images/Cameras/1745724059517.jpg",
+      "/images/Cameras/1745724059518.jpg",
+      "/images/Cameras/1745724059522.png",
+      "/images/Cameras/1745724059532.png"
+    ],
+    "originalPrice": 10,
+    "offeredPrice": 7,
+    "rating": 0,
+    "createdAt": "2025-04-27",
+    "reviews": [],
+    "features": [
+      "1",
+      "2"
+    ]
   }
 ]

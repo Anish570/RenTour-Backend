@@ -4,6 +4,7 @@ import {
   createProduct,
   deleteMyProduct,
   getMyProducts,
+  getProductDetail,
   updateMyProduct,
 } from "../controllers/sellerController.js";
 import upload from "../middleware/uploadMiddleware.js";
@@ -20,6 +21,7 @@ router.post(
 );
 
 router.get("/my-products", authMiddleware, getMyProducts);
+router.get("/:id", authMiddleware, getProductDetail);
 router.delete("/:id", authMiddleware, deleteMyProduct);
 router.put(
   "/:id",

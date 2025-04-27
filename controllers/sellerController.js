@@ -81,6 +81,31 @@ export const getMyProducts = async (req, res) => {
   }
 };
 
+export const getProductDetail = async (req, res) => {
+  try {
+    const products = await readProductsFile();
+    const userId = req.user.id;
+    const productId = parseInt(req.params.id);
+
+    const product = products.find((p) => p.id === productId);
+
+    if (!product) {
+      return res.status(404).json({ message: "Product not found" });
+    }
+
+    if (product.publisher !== userId) {
+      return res
+        .status(403)
+        .json({ message: "Unauthorized to delete this product" });
+    }
+    res.status(200).json(product);
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ message: "Server error while fetching product details" });
+  }
+};
 export const deleteMyProduct = async (req, res) => {
   try {
     const products = await readProductsFile();
