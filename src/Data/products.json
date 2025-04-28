@@ -761,74 +761,52 @@
     ]
   },
   {
-    "id": 1745722476393,
-    "name": "anish new product",
-    "category": "cameras",
+    "id": 1745826893228,
+    "name": "XPS 16 Laptop",
+    "category": "laptops",
     "publisher": 1745683951710,
-    "description": "anish know better descriptions",
-    "stock": 3,
+    "publisher_name": "Seller Account",
+    "description": "Brand new Laptop. Good for hightend works.",
+    "stock": 1,
     "sold": 0,
-    "productAvatar": "/images/cameras/1745732711655.jpg",
+    "productAvatar": "/images/laptops/1745826893206.avif",
     "images": [
-      "/images/cameras/1745732727026.png",
-      "/images/cameras/1745732727033.jpg"
+      "/images/laptops/1745831108141.avif",
+      "/images/laptops/1745831108142.avif",
+      "/images/laptops/1745831108142.avif",
+      "/images/laptops/1745831108143.avif",
+      "/images/laptops/1745831108145.avif"
     ],
-    "originalPrice": 200,
-    "offeredPrice": 205,
+    "originalPrice": 560000,
+    "offeredPrice": 3000,
     "rating": 0,
-    "createdAt": "2025-04-27",
+    "createdAt": "2025-04-28",
     "reviews": [],
     "features": [
-      "feature1",
-      "feature2"
+      "Memory = 32GB LPDDR5X 6400MT/s",
+      "Storage = 32GB LPDDR5X 6400MT/s"
     ]
   },
   {
-    "id": 1745722704068,
-    "name": "New one",
-    "category": "Drones",
+    "id": 1745833913678,
+    "name": "Kennedy Hutchinson",
+    "category": "laptops",
     "publisher": 1745683951710,
-    "description": "This is not a Drone",
-    "stock": 2,
+    "publisher_name": "seller",
+    "description": "In corporis dolores ",
+    "stock": 53,
     "sold": 0,
-    "productAvatar": "/images/Drones/1745722704031.png",
+    "productAvatar": "/images/laptops/1745833913668.avif",
     "images": [
-      "/images/Drones/1745722704042.png",
-      "/images/Drones/1745722704056.jpg"
+      "/images/laptops/1745833913670.avif"
     ],
-    "originalPrice": 1000,
-    "offeredPrice": 9000,
+    "originalPrice": 656,
+    "offeredPrice": 805,
     "rating": 0,
-    "createdAt": "2025-04-27",
+    "createdAt": "2025-04-28",
     "reviews": [],
     "features": [
-      "feature1",
-      "feature2"
-    ]
-  },
-  {
-    "id": 1745724059545,
-    "name": "last test",
-    "category": "Cameras",
-    "publisher": 1745683951710,
-    "description": "last test",
-    "stock": 0,
-    "sold": 0,
-    "productAvatar": "/images/Cameras/1745731975597.png",
-    "images": [
-      "/images/Cameras/1745724059517.jpg",
-      "/images/Cameras/1745724059518.jpg",
-      "/images/Cameras/1745724059522.png",
-      "/images/Cameras/1745724059532.png"
-    ],
-    "originalPrice": 10,
-    "offeredPrice": 7,
-    "rating": 0,
-    "createdAt": "2025-04-27",
-    "reviews": [],
-    "features": [
-      "1",
-      "2"
+      "Corrupti autem sed "
     ]
   }
 ]

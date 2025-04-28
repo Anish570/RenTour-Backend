@@ -110,17 +110,7 @@
     "userType": "buyer",
     "reviews": [],
     "products": [],
-    "cart": [
-      {
-        "productid": 18,
-        "quantity": 5,
-        "offeredPrice": 159
-      }
-    ],
-    "wishlist": [
-      {
-        "productId": 18
-      }
-    ]
+    "cart": [],
+    "wishlist": []
   }
 ]

@@ -94,18 +94,16 @@ export const searchProducts = async (req, res) => {
     }
 
     // Case-insensitive name match
-
     const filtered = products.filter(
       (p) =>
-        p.name.toLowerCase().includes(query.toLowerCase()) ||
-        p.category.toLowerCase().includes(query.toLowerCase()) ||
-        p.publisher.toLowerCase().includes(query.toLowerCase()) ||
-        p.description.toLowerCase().includes(query.toLowerCase()) ||
-        p.features.some((feature) =>
+        p.name?.toLowerCase().includes(query.toLowerCase()) ||
+        p.category?.toLowerCase().includes(query.toLowerCase()) ||
+        p.publisher_name?.toLowerCase().includes(query.toLowerCase()) ||
+        p.description?.toLowerCase().includes(query.toLowerCase()) ||
+        p.features?.some((feature) =>
           feature.toLowerCase().includes(query.toLowerCase())
         )
     );
-
     res.status(200).json(filtered);
   } catch (error) {
     console.error("Search error:", error);

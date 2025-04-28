@@ -22,7 +22,7 @@ export const createProduct = async (req, res) => {
     } = req.body;
 
     const userId = req.user.id; // 🧠 user.id comes from authMiddleware
-
+    const userName = req.user?.name || req.user?.username;
     // Get productAvatar and images
     const productAvatarFile = req.files?.productAvatar?.[0];
     const imagesFiles = req.files?.images || [];
@@ -39,7 +39,8 @@ export const createProduct = async (req, res) => {
       id: Date.now(),
       name,
       category,
-      publisher: userId, // ✅ Set publisher = logged in user's ID
+      publisher: userId,
+      publisher_name: userName,
       description,
       stock: Number(stock),
       sold: 0,
@@ -169,7 +170,6 @@ export const updateMyProduct = async (req, res) => {
     const userId = req.user.id;
     const productId = parseInt(req.params.id);
 
-    // Find product
     const productIndex = products.findIndex((p) => p.id === productId);
     if (productIndex === -1) {
       return res.status(404).json({ message: "Product not found" });
@@ -183,9 +183,14 @@ export const updateMyProduct = async (req, res) => {
         .json({ message: "Unauthorized to update this product" });
     }
 
-    // Helper function to delete old images
+    // --- Helper: delete image file
     const deleteImage = (relativePath) => {
-      const fullPath = path.join(__dirname, "..", "public", relativePath);
+      const fullPath = path.join(
+        __dirname,
+        "..",
+        "public",
+        relativePath.replace(/^\/+/, "")
+      );
       if (fs.existsSync(fullPath)) {
         try {
           fs.unlinkSync(fullPath);
@@ -195,31 +200,7 @@ export const updateMyProduct = async (req, res) => {
       }
     };
 
-    // 🖼 Handle uploaded new images
-    if (req.files) {
-      // If new images uploaded, delete old ones first
-      if (product.images && Array.isArray(product.images)) {
-        product.images.forEach(deleteImage);
-      }
-      if (product.productAvatar) {
-        deleteImage(product.productAvatar);
-      }
-
-      const newProductAvatarFile = req.files["productAvatar"]?.[0];
-      const newImagesFiles = req.files["images"] || [];
-
-      if (newProductAvatarFile) {
-        product.productAvatar = `/images/${product.category}/${newProductAvatarFile.filename}`;
-      }
-
-      if (newImagesFiles.length > 0) {
-        product.images = newImagesFiles.map(
-          (file) => `/images/${product.category}/${file.filename}`
-        );
-      }
-    }
-
-    // 📝 Update text fields (only if provided)
+    // --- Step 1: First update text fields (category, name, etc.)
     const fieldsToUpdate = [
       "name",
       "category",
@@ -232,21 +213,67 @@ export const updateMyProduct = async (req, res) => {
 
     fieldsToUpdate.forEach((field) => {
       if (req.body[field] !== undefined) {
-        if (
-          field === "stock" ||
-          field === "originalPrice" ||
-          field === "offeredPrice"
+        if (["stock", "originalPrice", "offeredPrice"].includes(field)) {
+          if (!isNaN(Number(req.body[field]))) {
+            product[field] = Number(req.body[field]);
+          }
+        } else if (
+          field === "features" &&
+          typeof req.body.features === "string"
         ) {
-          product[field] = Number(req.body[field]);
-        } else if (field === "features") {
-          product.features = req.body.features.split(","); // Expecting comma separated features
+          product.features = req.body.features.split(",").map((f) => f.trim());
         } else {
           product[field] = req.body[field];
         }
       }
     });
 
-    // Save updated products list
+    const updatedCategory = product.category; // after potential update
+
+    // --- Step 2: Handle Product Avatar
+    const newProductAvatarFile = req.files?.["productAvatar"]?.[0];
+
+    if (newProductAvatarFile) {
+      // If new avatar uploaded, delete old avatar
+      if (product.productAvatar) {
+        deleteImage(product.productAvatar);
+      }
+      product.productAvatar = `/images/${updatedCategory}/${newProductAvatarFile.filename}`;
+    }
+    // else, keep old productAvatar (nothing to do)
+
+    // --- Step 3: Handle multiple Images
+    const newImagesFiles = req.files?.["images"] || [];
+
+    if (req.body.existingImages || newImagesFiles.length > 0) {
+      let existingImages = [];
+
+      // Step 3.1: get existing images that are kept
+      if (req.body.existingImages) {
+        if (typeof req.body.existingImages === "string") {
+          existingImages = [req.body.existingImages];
+        } else if (Array.isArray(req.body.existingImages)) {
+          existingImages = req.body.existingImages;
+        }
+      }
+
+      // Step 3.2: delete old images that are removed
+      const imagesToDelete = (product.images || []).filter(
+        (imgPath) => !existingImages.includes(imgPath)
+      );
+      imagesToDelete.forEach(deleteImage);
+
+      // Step 3.3: add newly uploaded images
+      const newImagesPaths = newImagesFiles.map(
+        (file) => `/images/${updatedCategory}/${file.filename}`
+      );
+
+      // Step 3.4: combine existing kept images and newly uploaded ones
+      product.images = [...existingImages, ...newImagesPaths];
+    }
+    // else, keep old images (nothing to do)
+
+    // --- Step 4: Save the updated product
     products[productIndex] = product;
     await writeProductsFile(products);
 

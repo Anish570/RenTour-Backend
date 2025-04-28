@@ -107,6 +107,7 @@ export const signup = (req, res) => {
     const token = jwt.sign(
       {
         id: newUser.id,
+        name: newUser.name,
         username: newUser.username,
         type: newUser.userType,
       },
@@ -164,6 +165,7 @@ export const loginUser = async (req, res) => {
     const token = jwt.sign(
       {
         id: user.id,
+        name: user.name,
         username: user.username,
         type: user.userType || "buyer",
       },
